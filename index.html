@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Milouim_Form</title>
+      <link rel="stylesheet" href="./style.css" />
+   </head>
+   <body dir="rtl">
+      <main>
+         <form action="https://formspree.io/f/xrgdnjny" method="POST">
+            <h1>אימון טפסים</h1>
+
+            <h2>
+               אישור המעסיק על תקופת העסקה ושכר בתביעה לתגמולי לתגמולי מילואים
+               מילואים
+            </h2>
+            <label for="date">תאריך</label>
+            <input type="date" id="date" name="date" />
+
+            <br />
+            <label for="for">לכבוד:</label>
+            <br />
+            <textarea name="for" id="for" rows="2"></textarea>
+
+            <fieldset>
+               <p>רצ"ב טופס אישור המעסיק על תקופת העסקה ושכר.</p>
+               <br />
+               הוגשה אלינו תביעה ל
+               <input type="text" name="suit-for" />
+               ע"י: <br />
+               <table>
+                  <thead>
+                     <th>
+                        <label for="last-name">שם משפחה</label>
+                     </th>
+                     <th>
+                        <label for="first-name">שם פרטי</label>
+                     </th>
+                     <th>
+                        <label for="id">
+                           מספר זהות / דרכון (חובה לצרף צילום דרכון)
+                        </label>
+                     </th>
+                  </thead>
+
+                  <tbody>
+                     <tr>
+                        <td>
+                           <input type="text" id="last-name" name="last-name" />
+                        </td>
+
+                        <td>
+                           <input
+                              type="text"
+                              id="first-name"
+                              name="first-name"
+                           />
+                        </td>
+
+                        <td><input type="number" id="id" name="id" /></td>
+                     </tr>
+                  </tbody>
+               </table>
+               <label for="dead-line"
+                  >אבקשך למלא את הטופס המצ"ב בתקופה של</label
+               >
+               <input type="number" id="dead-line" name="dead-line" />
+               <label for="dead-line-date">חודשים שקדמו ליום</label>
+               <input type="date" id="dead-line-date" name="dead-line-date" />
+            </fieldset>
+
+            <fieldset>
+               <legend>הננו לאשר בזה שמר/גב'</legend>
+               <ol>
+                  <li></li>
+                  <li></li>
+                  <li>
+                     שכרו משולם על בסיס:
+                     <input
+                        type="checkbox"
+                        id="payed-on-monthly-basis"
+                        name="payed-on-monthly-basis"
+                     />
+                     <label for="payed-on-monthly-basis"> חודשי </label>
+
+                     <input
+                        type="checkbox"
+                        id="payed-on-daily-basis"
+                        name="payed-on-daily-basis"
+                     />
+                     <label for="payed-on-daily-basis"> יומי</label>
+
+                     <input
+                        type="checkbox"
+                        id="payed-on-hourly-basis"
+                        name="payed-on-hourly-basis"
+                     />
+                     <label for="payed-on-hourly-basis"> שעות</label>
+
+                     <input
+                        type="checkbox"
+                        id="payed-on-other-basis"
+                        name="payed-on-other-basis"
+                     />
+                     <label for="payed-on-other-basis"> אחר, </label>
+
+                     <label for="other-basis-details"> פרט: </label>
+                     <input
+                        type="text"
+                        id="other-basis-details"
+                        name="other-basis-details"
+                     />
+                  </li>
+               </ol>
+            </fieldset>
+            <input type="submit" />
+         </form>
+      </main>
+   </body>
+</html>
